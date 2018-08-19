@@ -1,0 +1,17 @@
+configuration {
+    bw: 3;
+    color-active: "argb:55d79921, #1d2021, #d79921, #fabd2f, #1d2021";
+    color-normal: "argb:551d2021, #ebdbb2, #282828, #504945, #fbf1c7";
+    color-window: "#1d2021, #a89984, #a89984";
+    color-urgent: "#cc241d, #1d2021, #cc241d, #fb4934, #1d2021";
+    drun-icon-theme: "Paper";
+    font: "System San Francisco Display 18";
+    hide-scrollbar: true;
+    lines: 3;
+    modi: "drun,window,run,ssh";
+    padding: 50;
+    separator-style: "solid";
+    show-icons: true;
+    theme: "glass";
+    width: 800;
+}
