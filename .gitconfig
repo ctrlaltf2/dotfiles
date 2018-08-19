@@ -1,0 +1,7 @@
+[user]
+	name = ctrlaltf2
+	email = ctrlaltf2@protonmail.ch
+[color]
+	ui = true
+[core]
+	editor = vim

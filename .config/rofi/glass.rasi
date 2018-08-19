@@ -1,0 +1,44 @@
+* {
+    transparent: #00000000;
+    spacing: 0em;
+    padding: 0px;
+    line-style: "none";
+    font: "System San Francisco Display 18";
+    background-color: @transparent;
+}
+
+#prompt {
+    padding: 8px;
+}
+
+#element {
+    margin: 0.35em;
+}
+#listview {
+    margin: 10px 20px 10px 20px;
+}
+
+#window {
+    fullscreen: false;
+    background-color: rgba(236, 239, 241, 0.25);
+}
+
+#mainbox {
+    margin: 1em 2em 1em 2em;
+}
+
+#entry {
+    padding: 8px;
+}
+
+#element {
+    padding: 0.25em;
+}
+
+#element.selected.normal {
+    background-color: rgba(23, 30, 33, 0.25);
+}
+
+#element.normal.urgent {
+    background-color: rgba(229, 57, 53, 0.25);
+}
