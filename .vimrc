@@ -69,17 +69,6 @@ colorscheme gruvbox
 "remove opaque background color for gruvbox
 "hi Normal ctermbg=none
 
-"--Enable Meta J and Meta K--
-
-"Map what is sent by alt-j in terminal to escape (^[) + character, check character sent with sed -n l
-execute "set <M-j>=\ej"
-execute "set <M-k>=\ek"
-
-"Move lines using Alt+Direction
-nnoremap <M-j> :m .+1<CR>==
-nnoremap <M-k> :m .-2<CR>==
-vnoremap <M-j> :m '>+1<CR>gv=gv
-vnoremap <M-k> :m '<-2<CR>gv=gv
 
 "safe file confirm dialogue
 set confirm
