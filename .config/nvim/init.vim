@@ -4,6 +4,7 @@ endif
 
 source $HOME/.config/nvim/plugins.vim
 source $HOME/.config/nvim/mappings.vim
+source $HOME/.config/nvim/plugins/rnvimr.vim
 
 filetype plugin indent on
 syntax enable
@@ -75,3 +76,7 @@ if (has("termguicolors"))
     " set termguicolors
     hi LineNr ctermbg=NONE guibg=NONE
 endif
+
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='onedark'

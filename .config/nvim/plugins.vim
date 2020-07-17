@@ -8,19 +8,25 @@ if dein#load_state('~/.cache/dein')
     call dein#add('Shougo/deoplete.nvim')
 
     call dein#add('joshdick/onedark.vim')
+    call dein#add('vim-airline/vim-airline')
+    call dein#add('vim-airline/vim-airline-themes')
 
     " General text editing
     call dein#add('tpope/vim-sleuth')
     call dein#add('bronson/vim-trailing-whitespace')
     call dein#add('junegunn/fzf.vim')
+    call dein#add('ryanoasis/vim-devicons')
+    call dein#add('jiangmiao/auto-pairs')
 
     " General programming
     call dein#add('sheerun/vim-polyglot')
     call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
-    call dein#add('liuchengxu/vim-which-key')
+    call dein#add('kevinhwang91/rnvimr', {'do': 'make sync'})
+    " call dein#add('DanilaMihailov/beacon.nvim', {'rev': '065d7fa'})
 
     " Language-specific improvement
     call dein#add('rust-lang/rust.vim')
+    " call dein#add('alvan/vim-closetag') " HTML tag closing
 
     if !has('nvim')
         call dein#add('roxma/nvim-yarp')
