@@ -5,6 +5,7 @@ endif
 source $HOME/.config/nvim/plugins.vim
 source $HOME/.config/nvim/mappings.vim
 source $HOME/.config/nvim/plugins/rnvimr.vim
+source $HOME/.config/nvim/plugins/auto-pairs.vim
 
 filetype plugin indent on
 syntax enable
