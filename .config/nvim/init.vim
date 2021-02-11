@@ -82,3 +82,6 @@ endif
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='onedark'
+
+" map .tpp to cpp filetype
+autocmd BufEnter *.tpp :setlocal filetype=cpp
