@@ -29,7 +29,7 @@ set expandtab
 
 "highlight 100th column
 set colorcolumn=100
-highlight ColorColumn ctermbg=darkgray
+"highlight ColorColumn ctermbg=darkgray
 
 "show line numbers
 set number
