@@ -33,6 +33,9 @@ if dein#load_state('~/.cache/dein')
     " LaTex
     call dein#add('lervag/vimtex')
 
+    " Vimwiki
+    call dein#add('vimwiki/vimwiki')
+
     if !has('nvim')
         call dein#add('roxma/nvim-yarp')
         call dein#add('roxma/vim-hug-neovim-rpc')
