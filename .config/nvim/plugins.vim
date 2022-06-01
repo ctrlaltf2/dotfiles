@@ -7,7 +7,11 @@ if dein#load_state('~/.cache/dein')
     call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
     call dein#add('Shougo/deoplete.nvim')
 
-    call dein#add('joshdick/onedark.vim')
+    " Colors
+    "" Standard onedark
+    " call dein#add('joshdick/onedark.vim')
+    "" Tree-sitter supported onedark
+    call dein#add('navarasu/onedark.nvim')
     call dein#add('vim-airline/vim-airline')
     call dein#add('vim-airline/vim-airline-themes')
 
@@ -21,20 +25,17 @@ if dein#load_state('~/.cache/dein')
     " General programming
     call dein#add('sheerun/vim-polyglot', {'rev': 'v4.16.0'})
     call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
-    call dein#add('kevinhwang91/rnvimr', {'do': 'make sync'})
-    " call dein#add('DanilaMihailov/beacon.nvim', {'rev': '065d7fa'})
+    call dein#add('nvim-treesitter/nvim-treesitter') " , {'hook_done_update': ':TSUpdate'})
 
     " Language-specific improvement
     call dein#add('rust-lang/rust.vim')
-    " call dein#add('alvan/vim-closetag') " HTML tag closing
-    " call dein#add('gko/vim-coloresque') " Highlight color codes in HTML-related files
-    call dein#add('lilydjwg/colorizer')
+    call dein#add('norcalli/nvim-colorizer.lua')
 
     " LaTex
     call dein#add('lervag/vimtex')
 
     " Vimwiki
-    call dein#add('vimwiki/vimwiki')
+    " call dein#add('vimwiki/vimwiki')
 
     if !has('nvim')
         call dein#add('roxma/nvim-yarp')
