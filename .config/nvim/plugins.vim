@@ -11,7 +11,8 @@ if dein#load_state('~/.cache/dein')
     "" Standard onedark
     " call dein#add('joshdick/onedark.vim')
     "" Tree-sitter supported onedark
-    call dein#add('navarasu/onedark.nvim')
+    # call dein#add('navarasu/onedark.nvim', {'rev': 'fdfe7bfff486acd102aae7fb2ff52e7e5f6c2bad'})
+    call dein#add('shaunsingh/nord.nvim')
     call dein#add('vim-airline/vim-airline')
     call dein#add('vim-airline/vim-airline-themes')
 
@@ -26,9 +27,11 @@ if dein#load_state('~/.cache/dein')
     call dein#add('sheerun/vim-polyglot', {'rev': 'v4.16.0'})
     call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
     call dein#add('nvim-treesitter/nvim-treesitter') " , {'hook_done_update': ':TSUpdate'})
+    call dein#add('github/copilot')
 
     " Language-specific improvement
     call dein#add('rust-lang/rust.vim')
+    call dein#add('simrat39/rust-tools.nvim')
     call dein#add('norcalli/nvim-colorizer.lua')
 
     " LaTex
