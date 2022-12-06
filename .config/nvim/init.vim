@@ -2,7 +2,10 @@ if &compatible
   set nocompatible
 endif
 
-source $HOME/.config/nvim/plugins.vim
+" source $HOME/.config/nvim/plugins.vim
+packadd packer.nvim
+lua require('plugins')
+
 source $HOME/.config/nvim/mappings.vim
 source $HOME/.config/nvim/plugins/auto-pairs.vim
 source $HOME/.config/nvim/plugins/vimtex.vim
@@ -64,12 +67,16 @@ autocmd FileType make set noexpandtab shiftwidth=7 softtabstop=0
 set showcmd
 
 hi Comment cterm=italic
+let g:onedark_config = {
+  \ 'style': 'deep',
+\}
 let g:onedark_hide_endofbuffer=1
 let g:onedark_terminal_italics=1
 let g:onedark_termcolors=256
 
 syntax on
-colorscheme onedark
+colorscheme nord
+" set background=light
 " highlight Normal ctermbg=black
 
 " checks if your terminal has 24-bit color support
