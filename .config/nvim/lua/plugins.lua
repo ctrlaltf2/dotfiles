@@ -24,9 +24,10 @@ return require('packer').startup(function(use)
     commit = '78f5f001709b5b321a35dcdc44549ef93185e024'
   }
 
-  use {
-    'sainnhe/everforest'
-  }
+  -- Cool colors but currently broken in new neovim :(
+  -- use {
+  --   'sainnhe/everforest'
+  -- }
 
   -- General text editing
   use 'tpope/vim-sleuth'
@@ -47,9 +48,18 @@ return require('packer').startup(function(use)
   -- use 'github/copilot'
 
   -- language-specific
+  --- rust
   use 'rust-lang/rust.vim'
   use 'simrat39/rust-tools.nvim'
+
+  --- html/css/js
   use 'norcalli/nvim-colorizer.lua'
+
+  --- python
+  use {
+    'psf/black',
+    branch = 'stable'
+  }
 
   -- LaTex
   use 'lervag/vimtex'
